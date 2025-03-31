@@ -1,0 +1,22 @@
+
+#specialties .card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#specialties .card img {
+    margin-bottom: 1rem;
+}
+
+
+#specialties .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #4A148C;
+}
+
+#specialties a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #513F95;
+}

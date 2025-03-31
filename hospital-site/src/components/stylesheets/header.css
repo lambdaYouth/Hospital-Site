@@ -1,0 +1,30 @@
+
+.top-bar {
+    background-color: #4A148C;
+    font-size: 0.5rem;
+    text-wrap: nowrap;
+}
+
+.top-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+    font-size: small;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 2rem;
+    padding: 1rem 1rem;
+}
+
+.bg-purple {
+    background-color: #4A148C;
+}

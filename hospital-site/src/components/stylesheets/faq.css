@@ -1,0 +1,13 @@
+
+#faq {
+    background-color: #f8f9fa;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #4A148C;
+    background-color: #e9ecef;
+}
