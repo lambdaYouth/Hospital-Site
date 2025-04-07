@@ -1,13 +1,26 @@
 import React from 'react';
 import './stylesheets/header.css';
-import logo from './assets/Icons/logo_color.png';
+import logo from './assets/Icons/hosp-logo3.png';
 import nabh from './assets/Icons/nabh.png';
 import nabl from './assets/Icons/nabl.png';
 import facebookLogo from './assets/Icons/facebook.png';
 import twitterLogo from './assets/Icons/twitter.png';
 import instagramLogo from './assets/Icons/instagram.png';
 import linkedinLogo from './assets/Icons/linkedin.png';
-
+import ambulanceLogo from './assets/Icons/ambulance_01.png';
+import cardioLogo from './assets/Icons/cardio.png';
+import diabetLogo from './assets/Icons/Diabetology.png';
+import entLogo from './assets/Icons/ent.png';
+import mailLogo from './assets/Icons/envelope.png';
+import gastroLogo from './assets/Icons/Gastroenterology.png';
+import gpsLogo from './assets/Icons/location.png';
+import nephroLogo from './assets/Icons/Nephrology.png';
+import neuroLogo from './assets/Icons/Neuro-Surgery-and-Trauma-Care.png';
+import neuroloLogo from './assets/Icons/Neurology.png';
+import obseLogo from './assets/Icons/Obstetrics-and-Gynaecology.png';
+import stethoLogo from './assets/Icons/stethoscope.png';
+import phoneLogo from './assets/Icons/phone.png';
+import whatsappLogo from './assets/Icons/whatsapp.png';
 
 
 const Header = () => {
@@ -23,17 +36,17 @@ const Header = () => {
             <img src={linkedinLogo} alt="Linkedin" style={{ width: '1.5rem', marginRight: '2rem' }} />
           </div>
           <div className="d-flex align-items-center">
-            <img src="./Icons/ambulance_01.png" alt="Ambulance" style={{ width: '2vh' }} />
+            <img src={ambulanceLogo} alt="Ambulance" style={{ width: '2vh' }} />
             <a href="#" className="text-white margin-0">+91 44 66 900 900</a>
-            <img src="./Icons/phone.png" alt="Phone" style={{ width: '2vh' }} />
+            <img src={phoneLogo} alt="Phone" style={{ width: '2vh' }} />
             <a href="#" className="text-white">+91 44 71 200 200</a>
-            <img src="./Icons/whatsapp.png" alt="Whatsapp" style={{ width: '3vh' }} />
+            <img src={whatsappLogo} alt="Whatsapp" style={{ width: '3vh' }} />
             <a href="#" className="text-white">+91 96627 25555</a>
-            <img src="./Icons/stethoscope.png" alt="Doctors" style={{ width: '2vh' }} />
+            <img src={stethoLogo} alt="Doctors" style={{ width: '2vh' }} />
             <a href="#" className="text-white">+91 76666 56 333, 76663 17 833</a>
-            <img src="./Icons/envelope.png" alt="Mail" style={{ width: '2vh' }} />
+            <img src={mailLogo} alt="Mail" style={{ width: '2vh' }} />
             <a href="#" className="text-white">Email Us</a>
-            <img src="./Icons/location.png" alt="Location" style={{ width: '2vh' }} />
+            <img src={gpsLogo} alt="Location" style={{ width: '2vh' }} />
             <a href="#" className="text-white">Contact Us</a>
           </div>
         </div>
@@ -43,7 +56,7 @@ const Header = () => {
       <header className="bg-white py-2">
         <div className="container d-flex justify-content-between align-items-center">
           <a href="#" className="logo">
-            <img src={logo} alt="Dr. Kamakshi Memorial Hospitals" height="50" />
+            <img src={logo} alt="Rajakrishnappa Hospitals"/>
           </a>
           <div className="col-md-6">
             <div className="search-bar">

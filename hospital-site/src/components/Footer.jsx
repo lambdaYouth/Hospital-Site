@@ -17,14 +17,14 @@ const Footer = () => {
             <img src={nabl} alt="NABL certificate" className="img-fluid" style={{ maxWidth: '13%' }} />
           </div>
           <div className="col-md-4">
-            <h6 className="text-uppercase font-weight-bold">DR.KAMAKSHI MEMORIAL HOSPITALS</h6>
+            <h6 className="text-uppercase font-weight-bold">RAJAKRISHNAPPA HOSPITALS</h6>
             <hr className="mb-4" style={{ borderTop: '1px solid #fff' }} />
-            <p><i className="fas fa-map-marker-alt"></i> No.1, Radial Road, Pallikaranai, Chennai - 600 100, Tamil Nadu, India</p>
+            <p><i className="fas fa-map-marker-alt"></i> No.5, Halleys Road, Keelkattalai, Chennai - 600 100, Tamil Nadu, India</p>
             <p><i className="fas fa-phone"></i> +91 - 44 - 66 300 300 | 71 200 200</p>
             <p><i className="fas fa-mobile-alt"></i> +91 99627 25555</p>
             <p><i className="far fa-envelope"></i> Email Us</p>
-            <p><i className="fas fa-globe"></i> www.drkmh.com</p>
-            <p>CIN# U85110TN2004PTC054715</p>
+            <p><i className="fas fa-globe"></i> www.rkph.com</p>
+            <p>CIN# U85110TN2004PTC053859</p>
           </div>
           <div className="col-md-4"></div>
         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
           <hr className="mb-4" style={{ borderTop: '1px solid #fff' }} />
           <div className="col-md-8">
-            <p>&copy; 2023 DR.KAMAKSHI MEMORIAL HOSPITAL PRIVATE LIMITED - ALL RIGHTS RESERVED</p>
+            <p>&copy; 2023 RAJAKRISHNAPPA HOSPITAL PRIVATE LIMITED - ALL RIGHTS RESERVED</p>
           </div>
         </div>
       </div>

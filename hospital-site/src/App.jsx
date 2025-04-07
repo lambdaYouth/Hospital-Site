@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Specialties from "./components/Specialites";
 import FAQ from "./components/Faq";
+import ContactUs from "./components/Contact";
 
 
 function App() {

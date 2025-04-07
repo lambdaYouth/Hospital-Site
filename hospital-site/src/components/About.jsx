@@ -9,10 +9,10 @@ const About = () => {
           <div className="col-md-6">
             <h2 style={{ color: '#513F95' }}>
               ABOUT<br />
-              <strong>DR. KAMAKSHI MEMORIAL HOSPITAL</strong>
+              <strong>RAJAKRISHNAPPA HOSPITAL</strong>
             </h2>
             <p style={{ color: '#000' }}>
-              Dr.Kamakshi Memorial Hospital is a 300 bedded tertiary health care provider located at Pallikaranai in South Chennai, committed to a higher objective of delivering ultimate quality of health care with utmost excellence and personal care. Dr.Kamakshi Memorial Hospital is a nationally recognized forerunner and one of the premier institutions in providing Cancer and Cardiac care. Dr.Kamakshi Memorial Hospital houses highly educated scholars across all the specialities who are globally trained, equipped with advanced technology and infrastructure to deliver holistic medical service across the clock, around the year.
+              Rajakrishnappa Hospital is a 300 bedded tertiary health care provider located at Keelkattalai in South Chennai, committed to a higher objective of delivering ultimate quality of health care with utmost excellence and personal care. Rajakrishnappa Hospital is a nationally recognized forerunner and one of the premier institutions in providing Cancer and Cardiac care. Rajakrishnappa Hospital houses highly educated scholars across all the specialities who are globally trained, equipped with advanced technology and infrastructure to deliver holistic medical service across the clock, around the year.
             </p>
             <a href="./about.html" className="btn btn-outline-primary">Read More...</a>
           </div>
