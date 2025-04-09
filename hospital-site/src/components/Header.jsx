@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './stylesheets/header.css';
 import logo from './assets/Icons/hosp-logo3.png';
 import nabh from './assets/Icons/nabh.png';
@@ -24,6 +25,7 @@ import whatsappLogo from './assets/Icons/whatsapp.png';
 
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <>
       {/* Top Bar */}
@@ -47,7 +49,7 @@ const Header = () => {
             <img src={mailLogo} alt="Mail" style={{ width: '2vh' }} />
             <a href="#" className="text-white">Email Us</a>
             <img src={gpsLogo} alt="Location" style={{ width: '2vh' }} />
-            <a href="#" className="text-white">Contact Us</a>
+            <button onClick={() => navigate('/ContactUs')}>Contact us</button>
           </div>
         </div>
       </div>

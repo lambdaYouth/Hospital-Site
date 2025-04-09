@@ -1,24 +1,20 @@
 import React from "react";
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
-import About from './components/About';
-import Specialties from "./components/Specialites";
-import FAQ from "./components/Faq";
-import ContactUs from "./components/Contact";
-
+import Home from "./components/Home.jsx";
 
 function App() {
   return (
     <>
-     <Header />
-     <Hero />
-     <About />
-     <Specialties />
-     <FAQ />
-     <Footer />
+    {/* <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+    </Router> */}
+    <Home />
     </>
   )
 }
