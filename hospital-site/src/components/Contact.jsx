@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './stylesheets/contact.css';
+import Header from './Header';
+import Footer from './Footer';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -44,77 +46,7 @@ const ContactUs = () => {
 
   return (
     <div>
-      {/* Top Bar */}
-      <div className="top-bar bg-purple">
-        <div className="container d-flex justify-content-between">
-          <div className="d-flex align-items-center">
-            {['facebook', 'twitter', 'instagram', 'linkedin'].map((icon, i) => (
-              <img key={i} src={`./Icons/${icon}.png`} alt={icon} style={{ width: icon === 'linkedin' ? '2vh' : '3vh', marginRight: '2rem' }} />
-            ))}
-          </div>
-          <div className="d-flex align-items-center">
-            {[
-              { icon: 'ambulance_01.png', text: '+91 44 66 900 900' },
-              { icon: 'phone.png', text: '+91 44 71 200 200' },
-              { icon: 'whatsapp.png', text: '+91 96627 25555' },
-              { icon: 'stethoscope.png', text: '+91 76666 56 333, 76663 17 833' },
-              { icon: 'envelope.png', text: 'Email Us' },
-              { icon: 'location.png', text: 'Contact Us', link: './contact.html' },
-            ].map((item, i) => (
-              <>
-                <img key={i} src={`./Icons/${item.icon}`} alt={item.text} style={{ width: '2vh' }} />
-                <a href={item.link || '#'} className="text-white margin-0">{item.text}</a>
-              </>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Header */}
-      <header className="bg-white py-2">
-        <div className="container d-flex justify-content-between align-items-center">
-          <a href="./index.html" className="logo">
-            <img src="./logo_color.png" alt="Dr. Kamakshi Memorial Hospitals" height="50" />
-          </a>
-          <div className="col-md-6">
-            <div className="search-bar">
-              <div className="input-group">
-                <input type="text" className="form-control rounded-pill" placeholder="Search for Treatments, Disease, Symptoms..." />
-                <button className="btn btn-outline-secondary rounded-pill" type="button">
-                  <i className="fas fa-search"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 text-end">
-            <img src="./Icons/nabh.png" alt="NABH" style={{ marginRight: '10px', width: '25%' }} />
-            <img src="./Icons/nabl.png" alt="Certificate" style={{ width: '32%' }} />
-          </div>
-        </div>
-      </header>
-
-      {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-purple">
-        <div className="container">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              {["About", "Services", "Facilities", "Consultants", "International", "Blog", "News & Media"].map((item, i) => (
-                <li className="nav-item" key={i}><a className="nav-link text-white" href="#">{item}</a></li>
-              ))}
-            </ul>
-          </div>
-          <div className="d-flex">
-            <select className="form-select">
-              <option selected>Other Location</option>
-              <option value="1">Chennai</option>
-              <option value="2">Another Location</option>
-            </select>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Contact Form */}
       <section id="contact-us" className="container my-5">
@@ -153,51 +85,14 @@ const ContactUs = () => {
             <label htmlFor="query" className="form-label">Ask Your Query</label>
             <textarea className="form-control" id="query" name="query" rows="4" value={formData.query} onChange={handleChange}></textarea>
           </div>
-          <div className="text-center">
+          <div className="mt-3 d-flex gap-2">
             <button type="submit" className="btn btn-primary">Send Message</button>
             <button type="reset" className="btn btn-secondary" onClick={() => setFormData({ name: '', email: '', mobileNumber: '', city: '', state: '', country: '', query: '' })}>Reset</button>
           </div>
         </form>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-dark text-light py-4">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <h6 className="text-uppercase font-weight-bold">SPECIALITIES</h6>
-              <hr className="mb-4" style={{ borderTop: '1px solid #fff' }} />
-              <h6 className="text-uppercase font-weight-bold">FACILITIES</h6>
-              <hr className="mb-4" style={{ borderTop: '1px solid #fff' }} />
-              <img src="./Icons/nabh.png" alt="NABH certificate" className="img-fluid" style={{ maxWidth: '10%' }} />
-              <img src="./Icons/nabl.png" alt="NABL certificate" className="img-fluid" style={{ maxWidth: '13%' }} />
-            </div>
-            <div className="col-md-4">
-              <h6 className="text-uppercase font-weight-bold">DR.KAMAKSHI MEMORIAL HOSPITALS</h6>
-              <hr className="mb-4" style={{ borderTop: '1px solid #fff' }} />
-              <p><i className="fas fa-map-marker-alt"></i> No.1, Radial Road, Pallikaranai, Chennai - 600 100, Tamil Nadu, India</p>
-              <p><i className="fas fa-phone"></i> +91 - 44 - 66 300 300 | 71 200 200</p>
-              <p><i className="fas fa-mobile-alt"></i> +91 99627 25555</p>
-              <p><i className="far fa-envelope"></i> Email Us</p>
-              <p><i className="fas fa-globe"></i> www.drkmh.com</p>
-              <p>CIN# U85110TN2004PTC054715</p>
-            </div>
-          </div>
-          <div className="col">
-            <div className="row d-flex justify-content-start">
-              <ul className="d-flex list-unstyled">
-                {["PRIVACY POLICY", "VIGIL MECHANISM POLICY", "CSR-POLICY", "TERMS OF USE", "CONTACT US"].map((item, i) => (
-                  <li key={i}><a href="#" className="text-white mx-2">{item}</a></li>
-                ))}
-              </ul>
-            </div>
-            <hr className="mb-4" style={{ borderTop: '1px solid #fff' }} />
-            <div className="col-md-8">
-              <p>&copy; 2023 DR.KAMAKSHI MEMORIAL HOSPITAL PRIVATE LIMITED - ALL RIGHTS RESERVED</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

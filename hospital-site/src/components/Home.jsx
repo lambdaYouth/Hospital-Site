@@ -7,6 +7,7 @@ import Footer from './Footer';
 import About from './About';
 import Specialties from "./Specialites";
 import FAQ from "./Faq";
+import ContactUs from "./Contact";
 
 function Home() {
     return (

@@ -1,20 +1,22 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ContactUs from "./components/Contact.jsx";
+import AboutUs from "./components/AboutUs.jsx";
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from "./components/Home.jsx";
 
 function App() {
   return (
     <>
-    {/* <Router>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
-    </Router> */}
-    <Home />
+    </Router>
+    
     </>
   )
 }

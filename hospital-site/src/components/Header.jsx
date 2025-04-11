@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Link} from 'react-router-dom';
 import './stylesheets/header.css';
 import logo from './assets/Icons/hosp-logo3.png';
 import nabh from './assets/Icons/nabh.png';
@@ -9,23 +10,16 @@ import twitterLogo from './assets/Icons/twitter.png';
 import instagramLogo from './assets/Icons/instagram.png';
 import linkedinLogo from './assets/Icons/linkedin.png';
 import ambulanceLogo from './assets/Icons/ambulance_01.png';
-import cardioLogo from './assets/Icons/cardio.png';
-import diabetLogo from './assets/Icons/Diabetology.png';
-import entLogo from './assets/Icons/ent.png';
 import mailLogo from './assets/Icons/envelope.png';
-import gastroLogo from './assets/Icons/Gastroenterology.png';
 import gpsLogo from './assets/Icons/location.png';
-import nephroLogo from './assets/Icons/Nephrology.png';
-import neuroLogo from './assets/Icons/Neuro-Surgery-and-Trauma-Care.png';
-import neuroloLogo from './assets/Icons/Neurology.png';
-import obseLogo from './assets/Icons/Obstetrics-and-Gynaecology.png';
 import stethoLogo from './assets/Icons/stethoscope.png';
 import phoneLogo from './assets/Icons/phone.png';
 import whatsappLogo from './assets/Icons/whatsapp.png';
 
 
+const menuItems = ['About', 'Services', 'Facilities', 'Consultants', 'International', 'Blog', 'News & Media'];
+
 const Header = () => {
-  const navigate = useNavigate();
   return (
     <>
       {/* Top Bar */}
@@ -47,9 +41,9 @@ const Header = () => {
             <img src={stethoLogo} alt="Doctors" style={{ width: '2vh' }} />
             <a href="#" className="text-white">+91 76666 56 333, 76663 17 833</a>
             <img src={mailLogo} alt="Mail" style={{ width: '2vh' }} />
-            <a href="#" className="text-white">Email Us</a>
+            <a href="mailto:abcxyz@gmail.com" className="text-white">Email Us</a>
             <img src={gpsLogo} alt="Location" style={{ width: '2vh' }} />
-            <button onClick={() => navigate('/ContactUs')}>Contact us</button>
+            <Link to="/contact" className='text-white'>Contact us </Link>
           </div>
         </div>
       </div>
@@ -57,9 +51,9 @@ const Header = () => {
       {/* Header */}
       <header className="bg-white py-2">
         <div className="container d-flex justify-content-between align-items-center">
-          <a href="#" className="logo">
+          <Link to="/" className='logo'>
             <img src={logo} alt="Rajakrishnappa Hospitals"/>
-          </a>
+          </Link>
           <div className="col-md-6">
             <div className="search-bar">
               <div className="input-group">
@@ -93,9 +87,13 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              {['About', 'Services', 'Facilities', 'Consultants', 'International', 'Blog', 'News & Media'].map((item) => (
+              {menuItems.map((item) => (
                 <li className="nav-item" key={item}>
-                  <a className="nav-link text-white" href={`./${item.toLowerCase()}.html`}>{item}</a>
+                  {item === 'About' ? (
+                    <Link to="/about" className="nav-link text-white">{item}</Link>
+                  ) : (
+                    <a className="nav-link text-white" href="#">{item}</a> // or link to real paths later
+                  )}
                 </li>
               ))}
             </ul>

@@ -6,6 +6,7 @@ import Footer
 const About = () => {
   return (
     <>
+    <Header />
       <section id="about" className="py-5">
         <div className="container">
           <div className="row align-items-center py-4">
@@ -37,6 +38,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

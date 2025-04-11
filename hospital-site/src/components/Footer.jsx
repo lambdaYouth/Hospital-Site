@@ -1,7 +1,11 @@
 import React from 'react';
 import './stylesheets/footer.css';
+import {Link} from 'react-router-dom';
 import nabh from './assets/Icons/nabh.png';
 import nabl from './assets/Icons/nabl.png';
+
+
+const footerItems = ['PRIVACY POLICY', 'VIGIL MECHANISM POLICY', 'CSR-POLICY', 'TERMS OF USE', 'CONTACT US'];
 
 const Footer = () => {
   return (
@@ -31,9 +35,13 @@ const Footer = () => {
         <div className="col">
           <div className="row d-flex justify-content-start">
             <ul className="d-flex list-unstyled">
-              {['PRIVACY POLICY', 'VIGIL MECHANISM POLICY', 'CSR-POLICY', 'TERMS OF USE', 'CONTACT US'].map((item) => (
+              {footerItems.map((item) => (
                 <li key={item} style={{ marginRight: '15px' }}>
-                  <a href="#">{item}</a>
+                  {item === 'CONTACT US' ? (
+                    <Link to="/contact" className="text-white">{item}</Link>
+                  ) : (
+                    <a href="#" className="text-white">{item}</a>
+                  )}
                 </li>
               ))}
             </ul>

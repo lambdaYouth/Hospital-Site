@@ -3,9 +3,7 @@ import './stylesheets/specialities.css';
 import cardioLogo from './assets/Icons/cardio.png';
 import diabetLogo from './assets/Icons/Diabetology.png';
 import entLogo from './assets/Icons/ent.png';
-import mailLogo from './assets/Icons/envelope.png';
 import gastroLogo from './assets/Icons/Gastroenterology.png';
-import gpsLogo from './assets/Icons/location.png';
 import nephroLogo from './assets/Icons/Nephrology.png';
 import neuroLogo from './assets/Icons/Neuro-Surgery-and-Trauma-Care.png';
 import neuroloLogo from './assets/Icons/Neurology.png';
@@ -46,7 +44,7 @@ const specialtiesData = [
     imgSrc: neuroLogo,
     alt: 'Neurosurgery',
     title: 'Neurosurgery',
-    description: 'Our team in KMH is specialized with the diagnosis and surgical treatment of disorders of the brain.',
+    description: 'Our team in RKH is specialized with the diagnosis and surgical treatment of disorders of the brain.',
   },
   {
     imgSrc: neuroloLogo,
