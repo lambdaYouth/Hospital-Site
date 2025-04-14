@@ -1,0 +1,29 @@
+.international-page ul li {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  #head2 {
+    color: #513F95;
+  }
+
+  h3, #head3 {
+    color: #685AA4;
+  }
+
+  #buttons {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#buttons > button {
+    margin: 20px;
+}
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

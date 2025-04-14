@@ -91,8 +91,10 @@ const Header = () => {
                 <li className="nav-item" key={item}>
                   {item === 'About' ? (
                     <Link to="/about" className="nav-link text-white">{item}</Link>
+                  ) : item === 'International' ? (
+                    <Link to="/international" className="nav-link text-white">{item}</Link>
                   ) : (
-                    <a className="nav-link text-white" href="#">{item}</a> // or link to real paths later
+                    <a className="nav-link text-white" href="#">{item}</a> // fallback or other links
                   )}
                 </li>
               ))}
