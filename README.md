@@ -1,9 +1,3 @@
 # Hospital-Site
-Replica of an hospital site. 
+This project is being built while I learn the MERN stack and concepts of full-stack development.
 
-Skills learned:
-<ul>
-  <li>Javascript</li>
-  <li>Bootstrap5</li>
-  <li>ReactJS</li>
-</ul>
