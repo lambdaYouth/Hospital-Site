@@ -5,19 +5,13 @@ import logo from './assets/Icons/hosp-logo3.png';
 import nabh from './assets/Icons/nabh.png';
 import nabl from './assets/Icons/nabl.png';
 
-
-
-
-const menuItems = ['About', 'Services', 'International'];
+const menuItems = ['Services', 'International', 'Contact Us'];
 
 const Header = () => {
   return (
     <>
       {/* Top Bar */}
       <div className="top-bar bg-purple d-flex justify-content-center">
-          <div className="d-flex align-items-center">
-            <Link to="/contact" className='text-white'>Contact us </Link>
-          </div>
       </div>
 
       {/* Header */}
@@ -61,10 +55,11 @@ const Header = () => {
             <ul className="navbar-nav">
               {menuItems.map((item) => (
                 <li className="nav-item" key={item}>
-                  {item === 'About' ? (
-                    <Link to="/about" className="nav-link text-white">{item}</Link>
-                  ) : item === 'International' ? (
+                  {item === 'International' ? (
                     <Link to="/international" className="nav-link text-white">{item}</Link>
+                  ) : 
+                  item === 'Contact Us' ? (
+                    <Link to="/contact" className="nav-link text-white">{item}</Link>
                   ) : (
                     <a className="nav-link text-white" href="#">{item}</a> // fallback or other links
                   )}
