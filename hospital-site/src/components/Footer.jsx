@@ -4,11 +4,11 @@ import {Link} from 'react-router-dom';
 import nabh from './assets/Icons/nabh.png';
 import nabl from './assets/Icons/nabl.png';
 
-
 const footerItems = ['PRIVACY POLICY', 'VIGIL MECHANISM POLICY', 'CSR-POLICY', 'TERMS OF USE', 'CONTACT US'];
 
 const Footer = () => {
   return (
+    <>
     <footer className="bg-dark text-light py-4">
       <div className="container">
         <div className="row">
@@ -37,12 +37,14 @@ const Footer = () => {
             <ul className="d-flex list-unstyled">
               {footerItems.map((item) => (
                 <li key={item} style={{ marginRight: '15px' }}>
-                  {item === 'CONTACT US' ? (
-                    <Link to="/contact" className="text-white">{item}</Link>
-                  ) : (
-                    <a href="#" className="text-white">{item}</a>
-                  )}
-                </li>
+                {item === 'CONTACT US' ? (
+                  <Link to="/contact" className="text-white">{item}</Link>
+                ) : item === 'TERMS OF USE' ? (
+                  <Link to="/terms-policies" className="text-white">{item}</Link>
+                ) : (
+                  <a href="#" className="text-white">{item}</a>
+                )}
+              </li>
               ))}
             </ul>
           </div>
@@ -53,6 +55,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+  </>
   );
 };
 

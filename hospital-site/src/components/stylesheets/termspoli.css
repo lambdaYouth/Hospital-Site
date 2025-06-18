@@ -1,0 +1,10 @@
+.tpage {
+    margin: auto;
+    margin-top: 2rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
