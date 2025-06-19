@@ -1,3 +1,3 @@
 # Hospital-Site
-This project is being built while I learn the MERN stack and concepts of full-stack development.
+This project was developed while learning full-stack development using the MERN tech-stack.
 
